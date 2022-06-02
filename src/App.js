@@ -1,10 +1,9 @@
-/*import logo from './logo.svg';*/
 import './App.css';
 import {BrowserRouter as Router, Routes} from 'react-router-dom'
-import Navbar from './components/navegacion/Navbar.js';
-import Inicio from './components/pag/Inicio.js';
-import Productos from './components/pag/Productos.js';
-import Usuario from './components/pag/Usuario.js';
+import Navbar from './components/navegacion/Navbar.jsx';
+import Inicio from './components/pag/Inicio.jsx';
+import Productos from './components/pag/Productos.jsx';
+import Usuario from './components/pag/Usuario.jsx';
 
 
 
