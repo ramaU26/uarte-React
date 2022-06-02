@@ -1,0 +1,4 @@
+git status / primero
+git add . / agregar todo par el commit
+git commit -m "LO QUE QUIERA PONER"
+git push subir todo
