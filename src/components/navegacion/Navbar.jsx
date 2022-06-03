@@ -26,7 +26,7 @@ const Navbar = () => {
             <Link to="cart" clasName="cart">
             <div>
             <i class='fas fa-shopping-cart' style={{fontSize:"36px"}}></i>
-           <span>4</span>
+           <span>0</span>
            </div>
               </Link>      
   
