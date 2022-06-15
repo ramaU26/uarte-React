@@ -6,7 +6,7 @@ import Productos from './components/navegacion/pag/Productos.jsx';
 import Usuario from './components/navegacion/pag/Usuario';
 import {useState} from 'react';
 import ItemCounter from './components/itemcount/ItemCount';
-
+import ItemListContainer from './components/itemlistconteiner/itemListContainer';
 
 
 
@@ -50,6 +50,7 @@ function App() {
        </Navbar>
      </Router>
     
+      <ItemListContainer />
       <ItemCounter stock={count} onAdd={onAdd} onRemove={onRemove} />
     
 
