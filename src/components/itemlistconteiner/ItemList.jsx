@@ -12,6 +12,7 @@ const ItemList = ({ items }) => {
             name={item.name}
             price={item.price}
             pictureUrl={item.pictureUrl}
+            clase={item.clase}
           />
         );
       })}

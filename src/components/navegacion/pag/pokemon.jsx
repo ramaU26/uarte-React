@@ -1,12 +1,12 @@
 import React from 'react'
 
-const Usuario = () =>{
+const Pokemon = () =>{
     return ( 
         <div>
-        <h1>Usuario</h1>
+        <h1>Pokemon</h1>
 
         </div>
     )
 }
 
-export default Usuario
+export default Pokemon

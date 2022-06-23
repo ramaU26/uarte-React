@@ -1,6 +1,6 @@
 import React from "react";
 
-const Item = ({ name, price, pictureUrl }) => {
+const Item = ({ name, price, pictureUrl, clase }) => {
   return (
     <li
       style={{
@@ -14,6 +14,7 @@ const Item = ({ name, price, pictureUrl }) => {
       <img src={pictureUrl} alt={`Imagen del pokemon ${name}`} />
       <h2>{name}</h2>
       <p>{price}</p>
+      <p>{clase}</p>
     </li>
   );
 };

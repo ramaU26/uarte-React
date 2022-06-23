@@ -17,10 +17,13 @@ const Navbar = () => {
             <Link className='nav-link' to='/'>Inicio</Link>
           </li>
           <li className="nav-item">
-          <Link className='nav-link' to='/Usuario'>Usuario</Link>
+          <Link className='nav-link' to='/Usuarios'>Usuarios</Link>
           </li>
           <li className="nav-item">
-          <Link className='nav-link' to='/Productos'>Productos</Link>
+          <Link className='nav-link' to='/Clases'>Clases</Link>
+          </li>
+          <li className="nav-item">
+          <Link className='nav-link' to='/pokemon'>Pokemon</Link>
           </li>
           <li>
             <Link to="cart" clasName="cart">

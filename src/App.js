@@ -1,13 +1,14 @@
 import './App.css';
-import {BrowserRouter as Router, Routes} from 'react-router-dom';
+import {BrowserRouter as Router, Routes, Route} from 'react-router-dom';
 import Navbar from './components/navegacion/Navbar.jsx';
 import Inicio from './components/navegacion/pag/Inicio.jsx';
-import Productos from './components/navegacion/pag/Productos.jsx';
-import Usuario from './components/navegacion/pag/Usuario';
 import {useState} from 'react';
 import ItemCounter from './components/itemcount/ItemCount';
 import ItemListContainer from './components/itemlistconteiner/itemListContainer';
-
+import Clases from './components/navegacion/pag/Clases.jsx';
+import Pokemon from './components/navegacion/pag/pokemon';
+import Usuarios from './components/navegacion/pag/Usuarios';
+import Cart from './cart/cart';
 
 
 function App() {
@@ -41,16 +42,18 @@ function App() {
   return (
    <div className='App'>
      <Router>
-       <Navbar>
-         <Routes>
-           <Router path='/' exact component={Inicio}/>
-           <Router path='/pokemon' exact component={Usuario}/>
-           <Router path='/items' exact component={Productos}/>
+       <Navbar/>
+    
+        <Routes>
+           <Route path='/' element={<Inicio/>}/>
+           <Route path='/pokemon' element={<ItemListContainer/>}/>
+           <Route path='/pokemon/:id' element={<Pokemon/>}/>
+           <Route path='/Clases/:id' element={<Clases/>}/>
+           <Route path='/Usuarios' element={<Usuarios/>}/>
+           <Route path='/cart' element={<Cart/>}/>
          </Routes>
-       </Navbar>
      </Router>
     
-      <ItemListContainer />
       <ItemCounter stock={count} onAdd={onAdd} onRemove={onRemove} />
     
 
